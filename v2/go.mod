@@ -2,10 +2,15 @@ module github.com/kitex-contrib/config-nacos/v2
 
 go 1.21
 
+replace github.com/apache/thrift => github.com/apache/thrift v0.13.0
+
+replace github.com/cloudwego-contrib/cwgo-pkg/config/nacos/v2 => ../../cwgo-pkg/config/nacos/v2
+
+replace github.com/cloudwego-contrib/cwgo-pkg/config/common => ../../cwgo-pkg/config/common
+
 require (
 	github.com/cloudwego-contrib/cwgo-pkg/config/nacos/v2 v2.0.0-00010101000000-000000000000
-	github.com/cloudwego-contrib/cwgo-pkg/config/utils v0.0.0-00010101000000-000000000000
-	github.com/cloudwego/kitex v0.11.0
+	github.com/cloudwego/kitex v0.11.3
 	github.com/cloudwego/kitex-examples v0.3.3
 	github.com/cloudwego/thriftgo v0.3.17
 	github.com/nacos-group/nacos-sdk-go/v2 v2.2.7
@@ -26,12 +31,13 @@ require (
 	github.com/bytedance/sonic v1.12.2 // indirect
 	github.com/bytedance/sonic/loader v0.2.0 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
+	github.com/cloudwego-contrib/cwgo-pkg/config/common v0.0.0-00010101000000-000000000000 // indirect
 	github.com/cloudwego/base64x v0.1.4 // indirect
 	github.com/cloudwego/configmanager v0.2.2 // indirect
 	github.com/cloudwego/dynamicgo v0.4.0 // indirect
 	github.com/cloudwego/fastpb v0.0.5 // indirect
 	github.com/cloudwego/frugal v0.2.0 // indirect
-	github.com/cloudwego/gopkg v0.1.1 // indirect
+	github.com/cloudwego/gopkg v0.1.2 // indirect
 	github.com/cloudwego/iasm v0.2.0 // indirect
 	github.com/cloudwego/localsession v0.0.2 // indirect
 	github.com/cloudwego/netpoll v0.6.4 // indirect
@@ -79,9 +85,3 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	sigs.k8s.io/yaml v1.4.0 // indirect
 )
-
-replace github.com/apache/thrift => github.com/apache/thrift v0.13.0
-
-replace github.com/cloudwego-contrib/cwgo-pkg/config/nacos/v2 => ../../cwgo-pkg/config/nacos/v2
-
-replace github.com/cloudwego-contrib/cwgo-pkg/config/utils => ../../cwgo-pkg/config/utils
